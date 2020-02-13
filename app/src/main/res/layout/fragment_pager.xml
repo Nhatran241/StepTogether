@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_margin="@dimen/dp20"
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp200"/>
+
+    <TextView
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="Tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_margin="@dimen/dp20"
+        android:textSize="15sp"
+        android:text="Noi cung nhau trao doi, giu lien lac voi gia dinh, ban be, dong nghiep..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

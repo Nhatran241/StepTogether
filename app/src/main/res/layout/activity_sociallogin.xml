@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1c9f8"
+    android:fitsSystemWindows="true">
+
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp50"
+            android:id="@+id/pager"
+            android:layout_width="@dimen/dp350"
+            android:layout_height="@dimen/dp300">
+        </androidx.viewpager.widget.ViewPager>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_below="@id/pager"
+            android:id="@+id/tabDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp10"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="@dimen/dp20"
+            app:tabRippleColor="@null"/>
+    <Button
+        android:transitionName="imageTransition"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp10"
+        android:id="@+id/btn_signin"
+        android:textSize="@dimen/dp18"
+        android:layout_below="@id/tabDots"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/login"
+        android:background="@drawable/bg_button_login_google"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="@dimen/dp50" />
+    <Button
+        android:id="@+id/btn_signup"
+        android:textSize="@dimen/dp18"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@id/btn_signin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="@string/register"
+        android:background="@drawable/bg_button_signup"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="@dimen/dp50" />
+    <RelativeLayout
+        android:id="@+id/rl_or"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@id/btn_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_or"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/dp18"
+            android:textColor="@color/white"
+            android:text="@string/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_toLeftOf="@id/tv_or"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"/>
+        <View
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_toRightOf="@id/tv_or"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_below="@id/rl_or"
+        android:id="@+id/btn_googlesign"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button_login_google"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="@dimen/dp50" >
+        <ImageView
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_btn_google_light_normal_ios"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"/>
+        <TextView
+            android:id="@+id/tv_sigin"
+            android:fontFamily="@font/robotomedium"
+            android:layout_centerInParent="true"
+            android:textColor="@color/blackgoogle"
+            android:textSize="@dimen/dp14"
+            android:text="@string/siginwithgoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_below="@id/btn_googlesign"
+        android:id="@+id/btn_fbsign"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button_login_fb"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="@dimen/dp50" >
+        <ImageView
+            android:layout_marginLeft="@dimen/dp60"
+            android:layout_centerVertical="true"
+            android:src="@drawable/com_facebook_button_icon"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"/>
+        <TextView
+            android:id="@+id/tv_fbsigin"
+            android:fontFamily="@font/robotomedium"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp14"
+            android:text="@string/signinwithfacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

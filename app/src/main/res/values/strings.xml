@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Step Together</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="rememberme">Remember Me</string>
+    <string name="forgotpassword">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="or">or</string>
+    <string name="siginwithgoogle">Sign in with Google</string>
+    <string name="signinwithfacebook">Sign in with Facebook</string>
+    <string name="signin">Sign In</string>
+
+
+    <string name="facebook_app_id">2379645018831702</string>
+    <string name="fb_login_protocol_scheme">fb2379645018831702</string>
+    <string name="username">Username</string>
+    <string name="confpass">Confirm Password</string>
+    <string name="tiengvietseleted"><u>Tiếng Việt</u></string>
+    <string name="tiengvietunseleted">Tiếng Việt</string>
+    <string name="englishseleted"><u>English</u></string>
+    <string name="englishunseleted">English</string>
+    <string name="register">Register</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="done">Done</string>
+</resources>

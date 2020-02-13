@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "121300332093",
+    "firebase_url": "https://knockknock-10202.firebaseio.com",
+    "project_id": "knockknock-10202",
+    "storage_bucket": "knockknock-10202.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121300332093:android:a5810ac27bc53ce96e0454",
+        "android_client_info": {
+          "package_name": "com.nssoft.app.steptogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121300332093-5ek3m8ivi5plehm1gkkiei9hg8qu75jb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nssoft.app.steptogether",
+            "certificate_hash": "1f1e97c2eab2b7d1de2a0f104da2f0c18c3114bb"
+          }
+        },
+        {
+          "client_id": "121300332093-7cv7u9kpurhhqt8ok5fa3gp763bf9bd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7AY-vDmUrL7wCIu35QjYpcTnxzzCXe_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121300332093-7cv7u9kpurhhqt8ok5fa3gp763bf9bd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
