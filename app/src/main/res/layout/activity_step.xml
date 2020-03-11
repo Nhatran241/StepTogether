@@ -13,12 +13,12 @@
         android:layout_height="match_parent">
     </androidx.viewpager.widget.ViewPager>
     <com.google.android.material.tabs.TabLayout
-        android:background="#2FFF00"
+        android:background="#31C411"
         android:layout_alignParentBottom="true"
         app:tabIndicatorColor="#3F51B5"
         app:tabMode="fixed"
         app:tabSelectedTextColor="#3F51B5"
-        app:tabTextColor="#FF00BCD4"
+        app:tabTextColor="#0AA2B6"
         app:tabIndicatorHeight="2dp"
         android:id="@+id/tl_step_activity"
         android:layout_width="match_parent"
