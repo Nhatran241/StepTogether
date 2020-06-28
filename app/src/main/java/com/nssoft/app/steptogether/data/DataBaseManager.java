@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class DataBaseManager extends SQLiteOpenHelper {
 
     private final static String DATABASE_NAME = "stepsapp";
-    private final static int DATABASE_VERSION = 1;
+    private final static int DATABASE_VERSION = 2;
 
     private static DataBaseManager instance;
     private static final AtomicInteger openCounter = new AtomicInteger();

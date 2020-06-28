@@ -11,8 +11,6 @@ import com.nssoft.app.steptogether.data.DataBaseManager;
 import com.nssoft.app.steptogether.data.SharedPreferencesHelper;
 import com.nssoft.app.steptogether.util.DateUtil;
 
-import java.sql.DatabaseMetaData;
-
 public class ListenSensorPresenter implements ListenSensorContract.Presenter, SensorEventListener {
     ListenSensorContract.View view;
     Context context;

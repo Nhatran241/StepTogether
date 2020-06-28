@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -108,6 +109,7 @@ public class FragmentStep extends Fragment implements ListenSensorContract.View{
         goal = mucTieu;
         int stepsToday = Math.max(todayOffSet + sinceBoot, 0);
         sliceCurrent.setValue(stepsToday);
+        Log.d("SANG_TEST", todayOffSet + " / " + sinceBoot);
         if (goal - stepsToday > 0) {
             if (pcStep.getData().size() == 1) {
                 pcStep.addPieSlice(sliceGoal);

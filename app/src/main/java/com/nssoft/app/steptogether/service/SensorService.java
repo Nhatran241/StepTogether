@@ -29,8 +29,8 @@ import static com.nssoft.app.steptogether.test_sang.AppNotification.CHANNEL_ID;
 public class SensorService extends Service implements SensorEventListener {
     public final static int NOTIFICATION_ID = 1;
     private final static long MICROSECONDS_IN_ONE_MINUTE = 60000000;
-    private final static long SAVE_OFFSET_TIME = AlarmManager.INTERVAL_HALF_HOUR;
-    private final static int SAVE_OFFSET_STEPS = 250;
+    private final static long SAVE_OFFSET_TIME = 1000 * 60 * 10;
+    private final static int SAVE_OFFSET_STEPS = 10;
 
     private static int steps;
     private static int lastSaveSteps;
@@ -53,7 +53,7 @@ public class SensorService extends Service implements SensorEventListener {
     private boolean update() {
         Log.d("SANG_TEST","3 update");
 
-        // đi 250 bước hoặc sau 30 phút lưu 1 lần (sang ngày khác)
+        // đi 50 bước hoặc sau 10 phút lưu 1 lần (sang ngày khác)
         if (steps > lastSaveSteps + SAVE_OFFSET_STEPS || (steps > 0 && System.currentTimeMillis() > lastSaveTime + SAVE_OFFSET_TIME)) {
             DataBaseManager db = DataBaseManager.getInstance(this);
 
